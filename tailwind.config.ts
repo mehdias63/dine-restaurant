@@ -93,7 +93,8 @@ const config: Config = {
 					'20px',
 					{
 						lineHeight: '30px',
-						fontWeight: '400',
+						fontWeight: '700',
+						letterSpacing: '-0.01563rem',
 					},
 				],
 				'body-s': [

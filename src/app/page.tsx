@@ -1,4 +1,4 @@
-import ItemAbout from '@/components/itemAbout'
+import ItemProduct from '@/components/itemProduct'
 import { Button } from '@/components/ui/button'
 
 export default function Home() {
@@ -44,7 +44,7 @@ export default function Home() {
 				</div>
 			</header>
 			<section>
-				<ItemAbout
+				<ItemProduct
 					images={
 						<picture>
 							<source
@@ -66,11 +66,11 @@ export default function Home() {
 							/>
 						</picture>
 					}
-					title="Enjoyable place "
-					title2="for all the family"
+					title="Enjoyable place for all the family"
 					text="Our relaxed surroundings make dining with us a great experience for everyone. We can even arrange a tour of the farm before your meal."
+					isActive={true}
 				/>
-				<ItemAbout
+				<ItemProduct
 					images={
 						<picture>
 							<source
@@ -92,11 +92,105 @@ export default function Home() {
 							/>
 						</picture>
 					}
-					title="The most locally"
-					title2="sourced food"
+					title="The most locally sourced food"
 					text="All our ingredients come directly from our farm or local fishery. So you can be sure that you’re eating the freshest, most sustainable food."
 					className="lg:flex-row-reverse"
+					isActive={true}
 				/>
+			</section>
+			<section className="w-full bg-black text-white flex flex-col lg:flex-row">
+				<div>
+					<img src="/images/patterns/pattern-divide.svg" alt="icon" />
+					<h2
+						className="text-[2rem] leading-[2.5rem] tracking-[-0.025rem]
+md:text-[3rem] md:leading-[3rem] md:tracking-[-0.03125rem] font-bold lg:mt-6 max-w-[15rem] md:max-w-[30rem]"
+					>
+						A few highlights from our menu
+					</h2>
+					<p>
+						We cater for all dietary requirements, but here’s a
+						glimpse at some of our diner’s favourites. Our menu is
+						revamped every season.
+					</p>
+				</div>
+				<div>
+					<ItemProduct
+						images={
+							<picture>
+								<source
+									media="(min-width: 1024px)"
+									srcSet="/images/homepage/salmon-desktop-tablet.jpg"
+								/>
+								<source
+									media="(min-width: 768px)"
+									srcSet="/images/homepage/salmon-desktop-tablet.jpg"
+								/>
+								<source
+									media="(max-width: 767px)"
+									srcSet="/images/homepage/salmon-mobile.jpg"
+								/>
+								<img
+									src="/images/homepage/salmon-mobile.jpg"
+									alt="summer"
+									className="w-full lg:max-h-[35rem]"
+								/>
+							</picture>
+						}
+						title="Seared Salmon Fillet"
+						text="Our locally sourced salmon served with a refreshing buckwheat summer salad."
+						headClassName="text-body-m md:text-body-m"
+					/>
+					<ItemProduct
+						images={
+							<picture>
+								<source
+									media="(min-width: 1024px)"
+									srcSet="/images/homepage/beef-desktop-tablet.jpg"
+								/>
+								<source
+									media="(min-width: 768px)"
+									srcSet="/images/homepage/beef-desktop-tablet.jpg"
+								/>
+								<source
+									media="(max-width: 767px)"
+									srcSet="/images/homepage/beef-mobile.jpg"
+								/>
+								<img
+									src="/images/homepage/beef-mobile.jpg"
+									alt="summer"
+									className="w-full lg:max-h-[35rem]"
+								/>
+							</picture>
+						}
+						title="Rosemary Filet Mignon"
+						text="Our prime beef served to your taste with a delicious choice of seasonal sides."
+					/>
+					<ItemProduct
+						images={
+							<picture>
+								<source
+									media="(min-width: 1024px)"
+									srcSet="/images/homepage/chocolate-desktop-tablet.jpg"
+								/>
+								<source
+									media="(min-width: 768px)"
+									srcSet="/images/homepage/chocolate-desktop-tablet.jpg"
+								/>
+								<source
+									media="(max-width: 767px)"
+									srcSet="/images/homepage/chocolate-mobile.jpg"
+								/>
+								<img
+									src="/images/homepage/chocolate-mobile.jpg"
+									alt="summer"
+									className="w-full lg:max-h-[35rem]"
+								/>
+							</picture>
+						}
+						title="Summer Fruit Chocolate Mousse"
+						text="Creamy mousse combined with summer fruits and dark chocolate shavings."
+					/>
+				</div>
 			</section>
 		</div>
 	)
