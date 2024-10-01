@@ -70,6 +70,33 @@ export default function Home() {
 					title2="for all the family"
 					text="Our relaxed surroundings make dining with us a great experience for everyone. We can even arrange a tour of the farm before your meal."
 				/>
+				<ItemAbout
+					images={
+						<picture>
+							<source
+								media="(min-width: 1024px)"
+								srcSet="/images/homepage/locally-sourced-desktop.jpg"
+							/>
+							<source
+								media="(min-width: 768px)"
+								srcSet="/images/homepage/locally-sourced-tablet.jpg"
+							/>
+							<source
+								media="(max-width: 767px)"
+								srcSet="/images/homepage/locally-sourced-mobile.jpg"
+							/>
+							<img
+								src="/images/homepage/locally-sourced-mobile.jpg"
+								alt="summer"
+								className="w-full lg:max-h-[35rem]"
+							/>
+						</picture>
+					}
+					title="The most locally"
+					title2="sourced food"
+					text="All our ingredients come directly from our farm or local fishery. So you can be sure that you’re eating the freshest, most sustainable food."
+					className="lg:flex-row-reverse"
+				/>
 			</section>
 		</div>
 	)

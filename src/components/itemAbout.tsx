@@ -1,8 +1,21 @@
-export default function ItemAbout({ title, title2, text, images }) {
+import { cn } from '@/lib/utils'
+
+export default function ItemAbout({
+	title,
+	title2,
+	text,
+	images,
+	className = '',
+}) {
 	return (
-		<div className="flex flex-col lg:flex-row items-center lg:items-start px-6 gap-5 lg:gap-20">
-			{images}
-			<div className="flex flex-col justify-center items-center lg:items-start gap-5 lg:gap-10 lg:py-28">
+		<div
+			className={cn(
+				`flex flex-col lg:flex-row items-center lg:items-start px-6 gap-5 lg:gap-20`,
+				className,
+			)}
+		>
+			<div className="flex justify-center items-center">{images}</div>
+			<div className="flex flex-col justify-center items-center lg:items-start gap-5 lg:gap-10 lg:py-28 mb-20">
 				<img src="/images/patterns/pattern-divide.svg" alt="icon" />
 				<h2
 					className="text-[2rem] leading-[2.5rem] tracking-[-0.025rem]
