@@ -98,41 +98,41 @@ export default function Home() {
 					isActive={true}
 				/>
 			</section>
-			<section className="w-full bg-black text-white flex flex-col lg:flex-row">
-				<div>
+			<section className="w-full bg-black text-white flex flex-col lg:flex-row p-6 md:p-24 lg:p-40 gap-6">
+				<div className="flex flex-col justify-center items-center gap-6 lg:w-1/2">
 					<img src="/images/patterns/pattern-divide.svg" alt="icon" />
 					<h2
-						className="text-[2rem] leading-[2.5rem] tracking-[-0.025rem]
-md:text-[3rem] md:leading-[3rem] md:tracking-[-0.03125rem] font-bold lg:mt-6 max-w-[15rem] md:max-w-[30rem]"
+						className="text-heading-m
+            md:text-[3rem] md:leading-[3rem] md:tracking-[-0.03125rem] font-bold lg:mt-6 max-w-[26rem] md:max-w-[30rem] text-center lg:text-left"
 					>
 						A few highlights from our menu
 					</h2>
-					<p>
+					<p className="text-body-s mx-6 md:max-w-[28rem] lg:mx-0">
 						We cater for all dietary requirements, but here’s a
 						glimpse at some of our diner’s favourites. Our menu is
 						revamped every season.
 					</p>
 				</div>
-				<div>
+				<div className="w-full lg:w-1/2">
 					<ItemProduct
 						images={
 							<picture>
 								<source
 									media="(min-width: 1024px)"
-									srcSet="/images/homepage/salmon-desktop-tablet.jpg"
+									srcSet="/images/homepage/salmon-desktop-tablet@2x.jpg"
 								/>
 								<source
 									media="(min-width: 768px)"
-									srcSet="/images/homepage/salmon-desktop-tablet.jpg"
+									srcSet="/images/homepage/salmon-desktop-tablet@2x.jpg"
 								/>
 								<source
 									media="(max-width: 767px)"
-									srcSet="/images/homepage/salmon-mobile.jpg"
+									srcSet="/images/homepage/salmon-mobile@2x.jpg"
 								/>
 								<img
-									src="/images/homepage/salmon-mobile.jpg"
+									src="/images/homepage/salmon-mobile@2x.jpg"
 									alt="summer"
-									className="w-full lg:max-h-[35rem]"
+									className="w-full object-cover"
 								/>
 							</picture>
 						}

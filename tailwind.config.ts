@@ -74,9 +74,9 @@ const config: Config = {
 					},
 				],
 				'heading-m': [
-					'20px',
+					'36px',
 					{
-						lineHeight: '24px',
+						lineHeight: '40px',
 						fontWeight: '700',
 						letterSpacing: '-0.01563rem',
 					},
