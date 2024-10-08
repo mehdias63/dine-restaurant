@@ -69,6 +69,9 @@ export default function Home() {
 					title="Enjoyable place for all the family"
 					text="Our relaxed surroundings make dining with us a great experience for everyone. We can even arrange a tour of the farm before your meal."
 					isActive={true}
+					className="gap-5 lg:gap-10"
+					divClassName="lg:py-28 mb-20 gap-5 lg:gap-10"
+					headClassName="max-w-[15rem] md:max-w-[25rem] lg:mt-6"
 				/>
 				<ItemProduct
 					images={
@@ -94,16 +97,18 @@ export default function Home() {
 					}
 					title="The most locally sourced food"
 					text="All our ingredients come directly from our farm or local fishery. So you can be sure that you’re eating the freshest, most sustainable food."
-					className="lg:flex-row-reverse"
+					className="lg:flex-row-reverse gap-5 lg:gap-10 mb-8"
 					isActive={true}
+					divClassName="lg:py-28 gap-5 lg:gap-10"
+					headClassName="max-w-[15rem] md:max-w-[25rem] lg:mt-6"
 				/>
 			</section>
-			<section className="w-full bg-black text-white flex flex-col lg:flex-row p-6 md:p-24 lg:p-40 gap-6">
-				<div className="flex flex-col justify-center items-center gap-6 lg:w-1/2">
+			<section className="w-full bg-black text-white flex flex-col lg:flex-row p-6 lg:p-10 gap-6 lg:pt-60">
+				<div className="flex flex-col items-center lg:items-start gap-6">
 					<img src="/images/patterns/pattern-divide.svg" alt="icon" />
 					<h2
 						className="text-heading-m
-            md:text-[3rem] md:leading-[3rem] md:tracking-[-0.03125rem] font-bold lg:mt-6 max-w-[26rem] md:max-w-[30rem] text-center lg:text-left"
+            md:text-[3rem] md:leading-[3rem] md:tracking-[-0.03125rem] font-bold lg:mt-6 text-center lg:text-left"
 					>
 						A few highlights from our menu
 					</h2>
@@ -113,13 +118,13 @@ export default function Home() {
 						revamped every season.
 					</p>
 				</div>
-				<div className="w-full lg:w-1/2">
+				<div className="w-full lg:mt-12">
 					<ItemProduct
 						images={
 							<picture>
 								<source
 									media="(min-width: 1024px)"
-									srcSet="/images/homepage/salmon-desktop-tablet@2x.jpg"
+									srcSet="/images/homepage/salmon-desktop-tablet.jpg"
 								/>
 								<source
 									media="(min-width: 768px)"
@@ -138,7 +143,9 @@ export default function Home() {
 						}
 						title="Seared Salmon Fillet"
 						text="Our locally sourced salmon served with a refreshing buckwheat summer salad."
+						className="gap-4 mb-4 lg:justify-center lg:items-center"
 						headClassName="text-body-m md:text-body-m"
+						parClassName="md:text-body-s"
 					/>
 					<ItemProduct
 						images={
@@ -149,14 +156,14 @@ export default function Home() {
 								/>
 								<source
 									media="(min-width: 768px)"
-									srcSet="/images/homepage/beef-desktop-tablet.jpg"
+									srcSet="/images/homepage/beef-desktop-tablet@2x.jpg"
 								/>
 								<source
 									media="(max-width: 767px)"
-									srcSet="/images/homepage/beef-mobile.jpg"
+									srcSet="/images/homepage/beef-mobile@2x.jpg"
 								/>
 								<img
-									src="/images/homepage/beef-mobile.jpg"
+									src="/images/homepage/beef-mobile@2x.jpg"
 									alt="summer"
 									className="w-full lg:max-h-[35rem]"
 								/>
@@ -164,6 +171,9 @@ export default function Home() {
 						}
 						title="Rosemary Filet Mignon"
 						text="Our prime beef served to your taste with a delicious choice of seasonal sides."
+						className="gap-4 mb-4 lg:justify-center lg:items-center"
+						headClassName="text-body-m md:text-body-m"
+						parClassName="md:text-body-s"
 					/>
 					<ItemProduct
 						images={
@@ -174,14 +184,14 @@ export default function Home() {
 								/>
 								<source
 									media="(min-width: 768px)"
-									srcSet="/images/homepage/chocolate-desktop-tablet.jpg"
+									srcSet="/images/homepage/chocolate-desktop-tablet@2x.jpg"
 								/>
 								<source
 									media="(max-width: 767px)"
-									srcSet="/images/homepage/chocolate-mobile.jpg"
+									srcSet="/images/homepage/chocolate-mobile@2x.jpg"
 								/>
 								<img
-									src="/images/homepage/chocolate-mobile.jpg"
+									src="/images/homepage/chocolate-mobile@2x.jpg"
 									alt="summer"
 									className="w-full lg:max-h-[35rem]"
 								/>
@@ -189,6 +199,9 @@ export default function Home() {
 						}
 						title="Summer Fruit Chocolate Mousse"
 						text="Creamy mousse combined with summer fruits and dark chocolate shavings."
+						className="gap-4 mb-4 lg:justify-center lg:items-center"
+						headClassName="text-body-m md:text-body-m"
+						parClassName="md:text-body-s"
 					/>
 				</div>
 			</section>
