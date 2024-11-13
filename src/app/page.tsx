@@ -205,6 +205,73 @@ export default function Home() {
 					/>
 				</div>
 			</section>
+			<section>
+				<div>
+					<picture>
+						<source
+							media="(min-width: 1024px)"
+							srcSet="/images/homepage/hero-bg-desktop@2x.jpg"
+						/>
+						<source
+							media="(min-width: 768px)"
+							srcSet="/images/homepage/hero-bg-tablet@2x.jpg"
+						/>
+						<source
+							media="(max-width: 767px)"
+							srcSet="/images/homepage/hero-bg-mobile@2x.jpg"
+						/>
+						<img
+							src="/images/homepage/hero-bg-mobile@2x.jpg"
+							alt="food"
+							className="w-full object-cover"
+						/>
+					</picture>
+				</div>
+				<h3></h3>
+				<h3></h3>
+				<h3></h3>
+				<h2></h2>
+				<p></p>
+				<Button></Button>
+			</section>
+			<section>
+				<div>
+					<picture>
+						<source
+							media="(min-width: 1024px)"
+							srcSet="/images/homepage/hero-bg-desktop@2x.jpg"
+						/>
+						<source
+							media="(min-width: 768px)"
+							srcSet="/images/homepage/hero-bg-tablet@2x.jpg"
+						/>
+						<source
+							media="(max-width: 767px)"
+							srcSet="/images/homepage/hero-bg-mobile@2x.jpg"
+						/>
+						<img
+							src="/images/homepage/hero-bg-mobile@2x.jpg"
+							alt="food"
+							className="w-full object-cover"
+						/>
+					</picture>
+					<h2></h2>
+					<Button></Button>
+				</div>
+			</section>
+			<footer className="bg-black">
+				<img src={'/images/logo.svg'} alt={'logo'} />
+				<div>
+					<p></p>
+					<p></p>
+					<p></p>
+				</div>
+				<div>
+					<p></p>
+					<p></p>
+					<p></p>
+				</div>
+			</footer>
 		</div>
 	)
 }
