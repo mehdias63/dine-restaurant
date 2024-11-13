@@ -227,12 +227,16 @@ export default function Home() {
 						/>
 					</picture>
 				</div>
-				<h3></h3>
-				<h3></h3>
-				<h3></h3>
-				<h2></h2>
-				<p></p>
-				<Button></Button>
+				<h3>FAMILY GATHERING</h3>
+				<h3>SPECIAL EVENTS</h3>
+				<h3>SOCIAL EVENTS</h3>
+				<h2>Family Gathering</h2>
+				<p>
+					We love catering for entire families. So please bring
+					everyone along for a special meal with your loved ones.
+					We’ll provide a memorable experience for all.
+				</p>
+				<Button>BOOK A TABLE</Button>
 			</section>
 			<section>
 				<div>
