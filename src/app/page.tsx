@@ -210,18 +210,18 @@ export default function Home() {
 					<picture>
 						<source
 							media="(min-width: 1024px)"
-							srcSet="/images/homepage/hero-bg-desktop@2x.jpg"
+							srcSet="/images/homepage/family-gathering-desktop@2x.jpg"
 						/>
 						<source
 							media="(min-width: 768px)"
-							srcSet="/images/homepage/hero-bg-tablet@2x.jpg"
+							srcSet="/images/homepage/family-gathering-tablet@2x.jpg"
 						/>
 						<source
 							media="(max-width: 767px)"
-							srcSet="/images/homepage/hero-bg-mobile@2x.jpg"
+							srcSet="/images/homepage/family-gathering-mobile@2x.jpg"
 						/>
 						<img
-							src="/images/homepage/hero-bg-mobile@2x.jpg"
+							src="/images/homepage/family-gathering-mobile@2x.jpg"
 							alt="food"
 							className="w-full object-cover"
 						/>
@@ -239,41 +239,46 @@ export default function Home() {
 				<Button>BOOK A TABLE</Button>
 			</section>
 			<section>
-				<div>
+				<div className="grid *:col-start-1 *:row-start-1 text-white">
 					<picture>
 						<source
 							media="(min-width: 1024px)"
-							srcSet="/images/homepage/hero-bg-desktop@2x.jpg"
+							srcSet="/images/homepage/ready-bg-desktop@2x.jpg"
 						/>
 						<source
 							media="(min-width: 768px)"
-							srcSet="/images/homepage/hero-bg-tablet@2x.jpg"
+							srcSet="/images/homepage/ready-bg-tablet@2x.jpg"
 						/>
 						<source
 							media="(max-width: 767px)"
-							srcSet="/images/homepage/hero-bg-mobile@2x.jpg"
+							srcSet="/images/homepage/ready-bg-mobile@2x.jpg"
 						/>
 						<img
-							src="/images/homepage/hero-bg-mobile@2x.jpg"
+							src="/images/homepage/ready-bg-mobile@2x.jpg"
 							alt="food"
 							className="w-full object-cover"
 						/>
 					</picture>
-					<h2></h2>
-					<Button></Button>
+					<h2>Ready to make a reservation?</h2>
+					<Button className="bg-transparent">BOOK A TABLE</Button>
 				</div>
 			</section>
-			<footer className="bg-black">
+			<footer className="bg-black text-white flex justify-around items-center w-full">
 				<img src={'/images/logo.svg'} alt={'logo'} />
 				<div>
-					<p></p>
-					<p></p>
-					<p></p>
+					<p className="text-center">
+						Marthwaite, Sedbergh
+						<br /> Cumbria
+						<br />
+						+00 44 123 4567
+					</p>
 				</div>
 				<div>
-					<p></p>
-					<p></p>
-					<p></p>
+					<p>
+						OPEN TIMES
+						<br /> MON - FRI: 09:00 AM - 10:00 PM
+						<br /> SAT - SUN: 09:00 AM - 11:30 PM
+					</p>
 				</div>
 			</footer>
 		</div>
