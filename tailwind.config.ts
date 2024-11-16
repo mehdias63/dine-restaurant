@@ -101,10 +101,11 @@ const config: Config = {
 					},
 				],
 				'body-s': [
-					'16px',
+					'14px',
 					{
-						lineHeight: '26px',
+						lineHeight: '28px',
 						fontWeight: '400',
+						letterSpacing: '0.125rem',
 					},
 				],
 			},
