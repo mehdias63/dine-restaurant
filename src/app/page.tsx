@@ -205,8 +205,8 @@ export default function Home() {
 					/>
 				</div>
 			</section>
-			<section>
-				<div>
+			<section className="flex flex-col lg:flex-row p-6">
+				<div className="p-6 md:p-10 lg:p-30 lg:max-w-[34rem]">
 					<picture>
 						<source
 							media="(min-width: 1024px)"
@@ -227,16 +227,28 @@ export default function Home() {
 						/>
 					</picture>
 				</div>
-				<h3>FAMILY GATHERING</h3>
-				<h3>SPECIAL EVENTS</h3>
-				<h3>SOCIAL EVENTS</h3>
-				<h2>Family Gathering</h2>
-				<p>
-					We love catering for entire families. So please bring
-					everyone along for a special meal with your loved ones.
-					We’ll provide a memorable experience for all.
-				</p>
-				<Button>BOOK A TABLE</Button>
+				<div className="flex flex-col items-center lg:items-start gap-4 lg:p-20 lg:gap-10">
+					<div className="lg:order-1 flex flex-col md:flex-row lg:flex-col gap-3 md:gap-10 lg:gap-5">
+						<h3 className="text-heading-s text-dark-gray cursor-pointer">
+							FAMILY GATHERING
+						</h3>
+						<h3 className="text-heading-s text-dark-gray opacity-50 hover:opacity-100 cursor-pointer">
+							SPECIAL EVENTS
+						</h3>
+						<h3 className="text-heading-s text-dark-gray opacity-50 hover:opacity-100 cursor-pointer">
+							SOCIAL EVENTS
+						</h3>
+					</div>
+					<h2 className="text-[2rem] md:text-heading-l text-dark">
+						Family Gathering
+					</h2>
+					<p className="max-w-[28rem] text-body-m text-dark text-center lg:text-left">
+						We love catering for entire families. So please bring
+						everyone along for a special meal with your loved ones.
+						We’ll provide a memorable experience for all.
+					</p>
+					<Button className="">BOOK A TABLE</Button>
+				</div>
 			</section>
 			<section>
 				<div className="grid *:col-start-1 *:row-start-1 text-white">

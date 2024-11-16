@@ -55,6 +55,9 @@ const config: Config = {
 					'4': 'hsl(var(--chart-4))',
 					'5': 'hsl(var(--chart-5))',
 				},
+				'dark-gray': '#4C4C4C',
+				'dark-gold': '#9e7f66',
+				dark: '#242B37',
 			},
 			fontSize: {
 				'heading-xl': [
@@ -93,7 +96,7 @@ const config: Config = {
 					'20px',
 					{
 						lineHeight: '30px',
-						fontWeight: '700',
+						fontWeight: '400',
 						letterSpacing: '-0.01563rem',
 					},
 				],
