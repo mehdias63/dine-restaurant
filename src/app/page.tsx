@@ -239,7 +239,7 @@ export default function Home() {
 							SOCIAL EVENTS
 						</h3>
 					</div>
-					<h2 className="text-[2rem] md:text-heading-l text-dark">
+					<h2 className="text-heading-m md:text-heading-l text-dark">
 						Family Gathering
 					</h2>
 					<p className="max-w-[28rem] text-body-m text-dark text-center lg:text-left">
@@ -250,31 +250,35 @@ export default function Home() {
 					<Button className="">BOOK A TABLE</Button>
 				</div>
 			</section>
-			<section>
-				<div className="grid *:col-start-1 *:row-start-1 text-white">
-					<picture>
-						<source
-							media="(min-width: 1024px)"
-							srcSet="/images/homepage/ready-bg-desktop@2x.jpg"
-						/>
-						<source
-							media="(min-width: 768px)"
-							srcSet="/images/homepage/ready-bg-tablet@2x.jpg"
-						/>
-						<source
-							media="(max-width: 767px)"
-							srcSet="/images/homepage/ready-bg-mobile@2x.jpg"
-						/>
-						<img
-							src="/images/homepage/ready-bg-mobile@2x.jpg"
-							alt="food"
-							className="w-full object-cover"
-						/>
-					</picture>
-					<h2>Ready to make a reservation?</h2>
-					<Button className="bg-transparent">BOOK A TABLE</Button>
+			<div className="grid *:col-start-1 *:row-start-1 text-white">
+				<picture>
+					<source
+						media="(min-width: 1024px)"
+						srcSet="/images/homepage/ready-bg-desktop@2x.jpg"
+					/>
+					<source
+						media="(min-width: 768px)"
+						srcSet="/images/homepage/ready-bg-tablet@2x.jpg"
+					/>
+					<source
+						media="(max-width: 767px)"
+						srcSet="/images/homepage/ready-bg-mobile@2x.jpg"
+					/>
+					<img
+						src="/images/homepage/ready-bg-mobile@2x.jpg"
+						alt="food"
+						className="w-full object-cover"
+					/>
+				</picture>
+				<div className="mx-auto my-auto p-6">
+					<h2 className="text-heading-m md:text-heading-l text-center">
+						Ready to make a reservation?
+					</h2>
+					<Button className="bg-transparent max-w-[15.3125rem] mt-8 block mx-auto">
+						BOOK A TABLE
+					</Button>
 				</div>
-			</section>
+			</div>
 			<footer className="bg-black text-white flex justify-around items-center w-full">
 				<img src={'/images/logo.svg'} alt={'logo'} />
 				<div>
