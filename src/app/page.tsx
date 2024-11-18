@@ -1,4 +1,5 @@
 import ItemProduct from '@/components/itemProduct'
+import ReservationForm from '@/components/formData'
 import { Button } from '@/components/ui/button'
 
 export default function Home() {
@@ -295,6 +296,7 @@ export default function Home() {
 					</p>
 				</div>
 			</footer>
+			<ReservationForm />
 		</div>
 	)
 }
