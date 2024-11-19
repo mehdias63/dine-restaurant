@@ -73,7 +73,7 @@ const ReservationForm = () => {
 					placeholder="Name"
 					value={formData.name}
 					onChange={handleChange}
-					className={`p-2 border rounded-md ${
+					className={`p-3 border-b-[1px] border-light-gray ${
 						errors.name ? 'border-red-500' : 'border-gray-300'
 					}`}
 				/>
@@ -90,7 +90,7 @@ const ReservationForm = () => {
 					placeholder="Email"
 					value={formData.email}
 					onChange={handleChange}
-					className={`p-2 border rounded-md ${
+					className={`p-3 border-b-[1px] border-light-gray ${
 						errors.email ? 'border-red-500' : 'border-gray-300'
 					}`}
 				/>
@@ -101,12 +101,13 @@ const ReservationForm = () => {
 				)}
 			</div>
 			<div className="flex flex-col gap-1">
+				<label className="px-3 text-body-m">Pick a date</label>
 				<input
 					type="date"
 					name="date"
 					value={formData.date}
 					onChange={handleChange}
-					className={`p-2 border rounded-md ${
+					className={`p-3 border-b-[1px] border-light-gray ${
 						errors.date ? 'border-red-500' : 'border-gray-300'
 					}`}
 				/>
@@ -117,11 +118,12 @@ const ReservationForm = () => {
 				)}
 			</div>
 			<div className="flex flex-col gap-1">
+				<label className="px-3 text-body-m">Pick a time</label>
 				<select
 					name="time"
 					value={formData.time}
 					onChange={handleChange}
-					className={`p-2 border rounded-md ${
+					className={`p-3 border-b-[1px] border-light-gray ${
 						errors.time ? 'border-red-500' : 'border-gray-300'
 					}`}
 				>
@@ -137,11 +139,11 @@ const ReservationForm = () => {
 					</small>
 				)}
 			</div>
-			<div className="flex items-center justify-between">
+			<div className="flex items-center justify-between border-b-[1px] border-light-gray py-3">
 				<button
 					type="button"
 					onClick={() => handlePeopleChange(-1)}
-					className="px-4 py-2 bg-gray-200 rounded-md hover:bg-gray-300"
+					className="text-beaver text-body-m font-bold"
 				>
 					-
 				</button>
@@ -149,7 +151,7 @@ const ReservationForm = () => {
 				<button
 					type="button"
 					onClick={() => handlePeopleChange(1)}
-					className="px-4 py-2 bg-gray-200 rounded-md hover:bg-gray-300"
+					className="text-beaver text-body-m font-bold"
 				>
 					+
 				</button>
