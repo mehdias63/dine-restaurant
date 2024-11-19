@@ -2,25 +2,7 @@
 import React, { useState } from 'react'
 import { Button } from '@/components/ui/button'
 
-const generateTimeOptions = () => {
-	const times = []
-	let hour = 9
-	let period = 'AM'
-
-	while (hour <= 12 || period === 'PM') {
-		times.push(`${hour < 10 ? `0${hour}` : hour}:00 ${period}`)
-		if (hour === 12) {
-			period = period === 'AM' ? 'PM' : null
-			hour = 1
-		} else {
-			hour++
-		}
-		if (!period) break
-	}
-	return times
-}
-
-const ReservationForm = () => {
+export default function ReservationForm() {
 	const [formData, setFormData] = useState({
 		name: '',
 		email: '',
@@ -57,6 +39,23 @@ const ReservationForm = () => {
 			return
 		}
 		alert('Reservation made successfully!')
+	}
+	const generateTimeOptions = () => {
+		const times = []
+		let hour = 9
+		let period = 'AM'
+
+		while (hour <= 12 || period === 'PM') {
+			times.push(`${hour < 10 ? `0${hour}` : hour}:00 ${period}`)
+			if (hour === 12) {
+				period = period === 'AM' ? 'PM' : null
+				hour = 1
+			} else {
+				hour++
+			}
+			if (!period) break
+		}
+		return times
 	}
 
 	const timeOptions = generateTimeOptions()
@@ -160,5 +159,3 @@ const ReservationForm = () => {
 		</form>
 	)
 }
-
-export default ReservationForm
