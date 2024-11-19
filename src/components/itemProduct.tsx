@@ -13,7 +13,7 @@ export default function ItemProduct({
 	return (
 		<div
 			className={cn(
-				`flex flex-col lg:flex-row items-center lg:items-start justify-center px-6`,
+				`flex flex-col lg:flex-row items-center lg:items-start justify-center px-6 relative`,
 				className,
 			)}
 		>

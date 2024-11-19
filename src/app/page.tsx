@@ -1,5 +1,4 @@
 import ItemProduct from '@/components/itemProduct'
-import ReservationForm from '@/components/formData'
 import { Button } from '@/components/ui/button'
 
 export default function Home() {
@@ -92,13 +91,13 @@ export default function Home() {
 							<img
 								src="/images/homepage/locally-sourced-mobile.jpg"
 								alt="summer"
-								className="w-full lg:max-h-[35rem]"
+								className="w-full lg:max-h-[35rem] lg:mb-[-5rem] z-10"
 							/>
 						</picture>
 					}
 					title="The most locally sourced food"
 					text="All our ingredients come directly from our farm or local fishery. So you can be sure that you’re eating the freshest, most sustainable food."
-					className="lg:flex-row-reverse gap-5 lg:gap-10 mb-8"
+					className="lg:flex-row-reverse gap-5 lg:gap-10 mb-8 lg:mb-0"
 					isActive={true}
 					divClassName="lg:py-28 gap-5 lg:gap-10"
 					headClassName="max-w-[15rem] md:max-w-[25rem] lg:mt-6"
@@ -251,7 +250,7 @@ export default function Home() {
 					<Button className="">BOOK A TABLE</Button>
 				</div>
 			</section>
-			<div className="grid *:col-start-1 *:row-start-1 text-white">
+			<div className="grid *:col-start-1 *:row-start-1 items-center text-white">
 				<picture>
 					<source
 						media="(min-width: 1024px)"
@@ -271,11 +270,11 @@ export default function Home() {
 						className="w-full object-cover"
 					/>
 				</picture>
-				<div className="mx-auto my-auto p-6">
+				<div className="p-6 flex flex-col lg:flex-row items-center lg:justify-between lg:px-16 xl:px-40">
 					<h2 className="text-heading-m md:text-heading-l text-center">
 						Ready to make a reservation?
 					</h2>
-					<Button className="bg-transparent max-w-[15.3125rem] mt-8 block mx-auto">
+					<Button className="bg-transparent block  mt-12 lg:mt-0">
 						BOOK A TABLE
 					</Button>
 				</div>
@@ -296,7 +295,6 @@ export default function Home() {
 					</p>
 				</div>
 			</footer>
-			<ReservationForm />
 		</div>
 	)
 }
