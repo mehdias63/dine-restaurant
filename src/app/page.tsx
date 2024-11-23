@@ -223,7 +223,19 @@ export default function Home() {
 					/>
 				</div>
 			</section>
-			<section className="flex flex-col lg:flex-row p-6">
+			<section className="flex flex-col lg:flex-row p-6 relative">
+				<div className="hidden md:block absolute top-0 left-[-25rem] lg:left-[-31rem]">
+					<img
+						src="/images/patterns/pattern-curve-top-right.svg"
+						alt="pattern"
+					/>
+				</div>
+				<div className="hidden md:block absolute z-20">
+					<img
+						src="/images/patterns/pattern-lines.svg"
+						alt="pattern"
+					/>
+				</div>
 				<div className="p-6 md:p-10 lg:p-30 lg:max-w-[34rem]">
 					<picture>
 						<source
