@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button'
 
 export default function Home() {
 	return (
-		<div className="max-w-[90rem] flex flex-col justify-center items-center mx-auto">
+		<div className="max-w-[90rem] flex flex-col justify-center items-center mx-auto overflow-hidden">
 			<header className="text-white grid *:col-start-1 *:row-start-1">
 				<div>
 					<picture>
@@ -43,7 +43,13 @@ export default function Home() {
 					<Button className="mt-8">BOOK A TABLE</Button>
 				</div>
 			</header>
-			<section>
+			<section className="relative ">
+				<div className="hidden md:block absolute left-[-35rem] top-[4rem] lg:left-[-15rem] lg:top-[10rem]">
+					<img
+						src="/images/patterns/pattern-curve-top-right.svg"
+						alt="pattern"
+					/>
+				</div>
 				<ItemProduct
 					images={
 						<picture>
@@ -69,10 +75,22 @@ export default function Home() {
 					title="Enjoyable place for all the family"
 					text="Our relaxed surroundings make dining with us a great experience for everyone. We can even arrange a tour of the farm before your meal."
 					isActive={true}
-					className="gap-5 lg:gap-10"
+					className="gap-5 lg:gap-36"
 					divClassName="lg:py-28 mb-20 gap-5 lg:gap-10"
-					headClassName="max-w-[15rem] md:max-w-[25rem] lg:mt-6"
+					headClassName="max-w-[15rem] md:max-w-[25rem] mt-6"
 				/>
+				<div className="hidden md:block absolute right-[-43rem] bottom-[-5rem] lg:right-[-16rem] lg:bottom-0">
+					<img
+						src="/images/patterns/pattern-curve-top-left.svg"
+						alt="pattern"
+					/>
+				</div>
+				<div className="hidden md:block absolute right-0 bottom-[25rem] lg:bottom-[16rem] lg:right-[-5rem] z-20">
+					<img
+						src="/images/patterns/pattern-lines.svg"
+						alt="pattern"
+					/>
+				</div>
 				<ItemProduct
 					images={
 						<picture>
@@ -97,10 +115,10 @@ export default function Home() {
 					}
 					title="The most locally sourced food"
 					text="All our ingredients come directly from our farm or local fishery. So you can be sure that you’re eating the freshest, most sustainable food."
-					className="lg:flex-row-reverse gap-5 lg:gap-10 mb-8 lg:mb-0"
+					className="lg:flex-row-reverse gap-5 lg:gap-36 mb-8 lg:mb-0"
 					isActive={true}
 					divClassName="lg:py-28 gap-5 lg:gap-10"
-					headClassName="max-w-[15rem] md:max-w-[25rem] lg:mt-6"
+					headClassName="max-w-[15rem] md:max-w-[25rem] mt-6"
 				/>
 			</section>
 			<section className="w-full bg-black text-white flex flex-col lg:flex-row p-6 lg:p-10 gap-6 lg:pt-60">

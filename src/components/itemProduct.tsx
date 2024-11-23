@@ -25,7 +25,11 @@ export default function ItemProduct({
 				)}
 			>
 				{isActive && (
-					<img src="/images/patterns/pattern-divide.svg" alt="icon" />
+					<img
+						src="/images/patterns/pattern-divide.svg"
+						alt="icon"
+						className="mt-6"
+					/>
 				)}
 				<h2
 					className={cn(
