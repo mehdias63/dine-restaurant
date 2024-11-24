@@ -57,13 +57,11 @@ export default function ReservationForm() {
 		}
 		return times
 	}
-
 	const timeOptions = generateTimeOptions()
-
 	return (
 		<form
 			onSubmit={handleSubmit}
-			className="flex flex-col gap-4 w-full max-w-md mx-auto p-6 border border-gray-300 rounded-lg shadow-md"
+			className="flex flex-col gap-4 w-full max-w-md mx-auto p-8 md:px-12 border border-gray-300 rounded-lg shadow-md bg-white"
 		>
 			<div className="flex flex-col gap-1">
 				<input

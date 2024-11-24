@@ -1,5 +1,7 @@
 import ItemProduct from '@/components/itemProduct'
 import { Button } from '@/components/ui/button'
+import Link from 'next/link'
+import Footer from '@/components/footer'
 
 export default function Home() {
 	return (
@@ -40,7 +42,9 @@ export default function Home() {
 						surroundings. Eat the freshest produce from the comfort of
 						our farmhouse.
 					</p>
-					<Button className="mt-8">BOOK A TABLE</Button>
+					<Link href="/booking">
+						<Button className="mt-8">BOOK A TABLE</Button>
+					</Link>
 				</div>
 			</header>
 			<section className="relative ">
@@ -258,7 +262,7 @@ export default function Home() {
 					</picture>
 				</div>
 				<div className="flex flex-col items-center lg:items-start gap-4 lg:p-20 lg:gap-10">
-					<div className="lg:order-1 flex flex-col md:flex-row lg:flex-col gap-3 md:gap-10 lg:gap-5">
+					<div className="lg:order-1 flex flex-col md:flex-row lg:flex-col gap-3 md:gap-10 lg:gap-5 text-center md:text-start">
 						<h3 className="text-heading-s text-dark-gray cursor-pointer">
 							FAMILY GATHERING
 						</h3>
@@ -277,7 +281,9 @@ export default function Home() {
 						everyone along for a special meal with your loved ones.
 						We’ll provide a memorable experience for all.
 					</p>
-					<Button className="">BOOK A TABLE</Button>
+					<Link href="/booking">
+						<Button className="">BOOK A TABLE</Button>
+					</Link>
 				</div>
 			</section>
 			<div className="grid *:col-start-1 *:row-start-1 items-center text-white">
@@ -304,27 +310,14 @@ export default function Home() {
 					<h2 className="text-heading-m md:text-heading-l text-center">
 						Ready to make a reservation?
 					</h2>
-					<Button className="bg-transparent block  mt-12 lg:mt-0">
-						BOOK A TABLE
-					</Button>
+					<Link href="/booking">
+						<Button className="bg-transparent block  mt-12 lg:mt-0">
+							BOOK A TABLE
+						</Button>
+					</Link>
 				</div>
 			</div>
-			<footer className="bg-black text-white flex justify-around items-center w-full flex-col md:flex-row py-20 px-6">
-				<img src={'/images/logo.svg'} alt={'logo'} />
-				<div className="lg:w-2/3 lg:flex justify-around">
-					<p className="text-center md:text-left my-6 text-body-s uppercase">
-						Marthwaite, Sedbergh
-						<br /> Cumbria
-						<br />
-						+00 44 123 4567
-					</p>
-					<p className="text-center md:text-left lg:my-6 text-body-s uppercase">
-						OPEN TIMES
-						<br /> MON - FRI: 09:00 AM - 10:00 PM
-						<br /> SAT - SUN: 09:00 AM - 11:30 PM
-					</p>
-				</div>
-			</footer>
+			<Footer />
 		</div>
 	)
 }
