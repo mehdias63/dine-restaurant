@@ -41,11 +41,11 @@ export default function Reservations() {
 						RESERVE PLACE
 					</Button>
 				</div>
-				<div className="text-black mt-[20rem] ml-[35rem] z-30">
+				<div className="text-black ml-[35rem] mb-[]">
 					<ReservationForm />
 				</div>
 			</div>
-			<div className="hidden lg:block relative z-10">
+			<div className="hidden lg:block relative">
 				<img
 					src="/images/patterns/pattern-curve-bottom-right.svg"
 					alt="pattern"
