@@ -41,7 +41,7 @@ export default function Reservations() {
 						RESERVE PLACE
 					</Button>
 				</div>
-				<div className="text-black ml-[35rem] mb-[]">
+				<div className="absolute text-black ml-[15rem] mb-[5rem]">
 					<ReservationForm />
 				</div>
 			</div>

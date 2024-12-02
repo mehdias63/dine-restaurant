@@ -61,7 +61,7 @@ export default function ReservationForm() {
 	return (
 		<form
 			onSubmit={handleSubmit}
-			className="flex flex-col gap-4 w-full max-w-md mx-auto p-8 md:px-12 border border-gray-300 rounded-lg shadow-md bg-white"
+			className="flex flex-col gap-4 w-full max-w-md mx-auto p-8 md:px-12 border border-gray-300 rounded-lg shadow-md bg-white min-w-[21rem] md:min-w-[33.75rem]"
 		>
 			<div className="flex flex-col gap-1">
 				<input
