@@ -48,7 +48,7 @@ export default function Home() {
 				</div>
 			</header>
 			<section className="relative ">
-				<div className="hidden md:block absolute left-[-35rem] top-[4rem] lg:left-[-15rem] lg:top-[10rem]">
+				<div className="hidden md:block absolute left-[-35rem] top-[4rem] lg:left-[-10rem] lg:top-[10rem]">
 					<img
 						src="/images/patterns/pattern-curve-top-right.svg"
 						alt="pattern"
@@ -72,24 +72,24 @@ export default function Home() {
 							<img
 								src="/images/homepage/enjoyable-place-mobile.jpg"
 								alt="summer"
-								className="w-full mt-[-5rem] lg:mt-[-3rem] lg:max-h-[35rem]"
+								className="w-full mt-[-5rem] lg:mt-[-4rem]"
 							/>
 						</picture>
 					}
 					title="Enjoyable place for all the family"
 					text="Our relaxed surroundings make dining with us a great experience for everyone. We can even arrange a tour of the farm before your meal."
 					isActive={true}
-					className="gap-5 lg:gap-36"
+					className="gap-5 lg:gap-24"
 					divClassName="lg:py-28 mb-20 gap-5 lg:gap-10"
 					headClassName="max-w-[15rem] md:max-w-[25rem] mt-6"
 				/>
-				<div className="hidden md:block absolute right-[-43rem] bottom-[-5rem] lg:right-[-16rem] lg:bottom-0">
+				<div className="hidden md:block absolute right-[-43rem] bottom-[-5rem] lg:right-[-9.5rem] lg:bottom-0">
 					<img
 						src="/images/patterns/pattern-curve-top-left.svg"
 						alt="pattern"
 					/>
 				</div>
-				<div className="hidden md:block absolute right-0 bottom-[25rem] lg:bottom-[16rem] lg:right-[-5rem] z-20">
+				<div className="hidden md:block absolute right-0 bottom-[25rem] lg:bottom-[18rem] lg:right-[-5rem] z-20">
 					<img
 						src="/images/patterns/pattern-lines.svg"
 						alt="pattern"
@@ -113,19 +113,19 @@ export default function Home() {
 							<img
 								src="/images/homepage/locally-sourced-mobile.jpg"
 								alt="summer"
-								className="w-full lg:max-h-[35rem] lg:mb-[-5rem] z-10"
+								className="w-full lg:mb-[-4rem]"
 							/>
 						</picture>
 					}
 					title="The most locally sourced food"
 					text="All our ingredients come directly from our farm or local fishery. So you can be sure that you’re eating the freshest, most sustainable food."
-					className="lg:flex-row-reverse gap-5 lg:gap-36 mb-8 lg:mb-0"
+					className="lg:flex-row-reverse gap-5 lg:gap-24 mb-8 lg:mb-0 lg:mt-20"
 					isActive={true}
 					divClassName="lg:py-28 gap-5 lg:gap-10"
 					headClassName="max-w-[15rem] md:max-w-[25rem] mt-6"
 				/>
 			</section>
-			<section className="w-full bg-black text-white flex flex-col lg:flex-row p-6 lg:p-10 gap-6 lg:pt-60">
+			<section className="w-full bg-black text-white flex flex-col lg:flex-row p-6 lg:p-10 gap-6 lg:pt-36 lg:px-24">
 				<div className="flex flex-col items-center lg:items-start gap-6">
 					<img src="/images/patterns/pattern-divide.svg" alt="icon" />
 					<h2

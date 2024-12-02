@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import './globals.css'
+import { League_Spartan } from 'next/font/google'
 
 const geistSans = localFont({
 	src: './fonts/GeistVF.woff',
@@ -17,6 +18,12 @@ export const metadata: Metadata = {
 	title: 'Dine Restaurant',
 	description: 'A Frontend Mentor challenge',
 }
+const league = League_Spartan({
+	weight: ['400', '700'],
+	style: ['normal'],
+	subsets: ['latin'],
+	display: 'swap',
+})
 
 export default function RootLayout({
 	children,
@@ -25,9 +32,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body
-				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-			>
+			<body className={`${league.className} antialiased`}>
 				{children}
 			</body>
 		</html>
