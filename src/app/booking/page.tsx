@@ -4,8 +4,8 @@ import Footer from '@/components/footer'
 
 export default function Reservations() {
 	return (
-		<div>
-			<div className="grid *:col-start-1 *:row-start-1 text-white justify-center md:items-start">
+		<div className="max-w-[90rem] flex flex-col justify-center items-center mx-auto">
+			<div className="grid *:col-start-1 *:row-start-1 text-white justify-center md:items-start lg:relative">
 				<picture>
 					<source
 						media="(min-width: 1024px)"
@@ -22,13 +22,13 @@ export default function Reservations() {
 					<img
 						src="/images/booking/hero-bg-mobile@2x.jpg"
 						alt="food"
-						className="w-full object-cover"
+						className="w-full object-cover max-h-[75rem] lg:h-[40rem]"
 					/>
 				</picture>
-				<div className=" p-6 w-full">
+				<div className=" p-20 w-full flex flex-col items-center md:items-start ">
 					<img src="/images/logo.svg" alt="logo" />
 				</div>
-				<div className="p-6 gap-5 flex flex-col items-center lg:items-start mt-32">
+				<div className="p-6 gap-5 flex flex-col items-center lg:items-start mt-44 sm:mt-64 xl:px-20">
 					<h2 className="text-[2rem] md:text-5xl lg:text-[5rem] font-light leading-10 md:leading-[4rem] lg:leading-[5rem] tracking-[-0.025rem]  md:tracking-[-0.0375rem] lg:tracking-[-0.0625rem] text-center">
 						Reservations
 					</h2>
@@ -41,11 +41,11 @@ export default function Reservations() {
 						RESERVE PLACE
 					</Button>
 				</div>
-				<div className="absolute text-black ml-[15rem] mb-[5rem]">
+				<div className="lg:absolute text-black mt-[35rem] sm:mt-[50rem] md:mt-[37rem] mb-[8rem] lg:mt-0 lg:mb-0 lg:right-[5rem] lg:top-[18rem] mx-auto z-20">
 					<ReservationForm />
 				</div>
 			</div>
-			<div className="hidden lg:block relative">
+			<div className="hidden lg:block relative w-full">
 				<img
 					src="/images/patterns/pattern-curve-bottom-right.svg"
 					alt="pattern"
