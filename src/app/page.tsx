@@ -125,8 +125,8 @@ export default function Home() {
 					headClassName="max-w-[15rem] md:max-w-[25rem] mt-6"
 				/>
 			</section>
-			<section className="w-full bg-black text-white flex flex-col lg:flex-row p-6 lg:p-10 gap-6 lg:pt-36 lg:px-24">
-				<div className="flex flex-col items-center lg:items-start gap-6">
+			<section className="w-full bg-black text-white flex flex-col lg:flex-row p-6 gap-6 xl:gap-[3rem] lg:pt-36">
+				<div className="flex flex-col items-center lg:items-start gap-6 lg:max-w-[30rem] xl:ml-20">
 					<img src="/images/patterns/pattern-divide.svg" alt="icon" />
 					<h2
 						className="text-heading-m
@@ -134,7 +134,7 @@ export default function Home() {
 					>
 						A few highlights from our menu
 					</h2>
-					<p className="text-body-s mx-6 md:max-w-[28rem] lg:mx-0">
+					<p className="text-body-s mx-6 lg:mx-0">
 						We cater for all dietary requirements, but here’s a
 						glimpse at some of our diner’s favourites. Our menu is
 						revamped every season.
