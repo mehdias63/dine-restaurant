@@ -17,6 +17,7 @@ const config: Config = {
 				'cod-gray': '#111111',
 				'ebony-clay': '#242b37',
 				'light-gray': '#8E8E8E',
+				'very-light-gray': '#e0dbdb',
 				'shuttle-gray': '#5c6779',
 				card: {
 					DEFAULT: 'hsl(var(--card))',
